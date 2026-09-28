@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Boyfriend Day Stromie 💗</title>
+<style>
+  :root{
+    --pink:#ff8fbd;
+    --light:#fff0f7;
+    --dark:#5b3150;
+    --accent:#ff5d9e;
+    --card:rgba(255,255,255,.88);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family:Arial,sans-serif; color:var(--dark);
+    background:linear-gradient(135deg,#fff0f7,#ffe0ef);
+    overflow-x:hidden;
+  }
+  .cat{position:fixed;z-index:0;font-size:38px;animation:float 4s ease-in-out infinite;pointer-events:none}
+  .c1{top:8%;left:3%}.c2{top:25%;right:3%;animation-delay:1s}
+  .c3{bottom:16%;left:4%;animation-delay:2s}.c4{bottom:5%;right:5%;animation-delay:.5s}
+  @keyframes float{50%{transform:translateY(-12px) rotate(4deg)}}
+  main{position:relative;z-index:1;max-width:850px;margin:auto;padding:35px 18px 70px}
+  .hero,.card{
+    background:var(--card); border:2px solid #ffc1da; border-radius:28px;
+    box-shadow:0 12px 35px rgba(150,60,110,.12);
+  }
+  .hero{text-align:center;padding:48px 22px}
+  .tiny{font-size:14px;letter-spacing:2px}
+  h1{font-size:clamp(35px,8vw,70px);margin:12px 0;color:var(--accent)}
+  h2{margin-top:0;color:#e94d91}
+  .heart{font-size:42px;animation:beat 1.2s infinite}
+  @keyframes beat{50%{transform:scale(1.18)}}
+  button{
+    border:0;border-radius:999px;padding:14px 25px;background:var(--accent);
+    color:white;font-size:16px;font-weight:bold;cursor:pointer;box-shadow:0 7px 16px #ff8fbd66;
+  }
+  .card{margin-top:24px;padding:28px}
+  .hidden{display:none}
+  .message{line-height:1.8;font-size:17px;white-space:pre-line}
+  .photos{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  .photos img{width:100%;height:210px;object-fit:cover;border-radius:20px;background:#ffe0ef}
+  .note{text-align:center;font-size:14px;opacity:.75}
+  .footer{text-align:center;margin-top:25px}
+</style>
+</head>
+<body>
+
+<!-- Cute cats: change these emojis to image URLs later if you want -->
+<div class="cat c1">🐱</div><div class="cat c2">😽</div>
+<div class="cat c3">🐾</div><div class="cat c4">😺</div>
+
+<main>
+  <section class="hero">
+    <div class="tiny">A LITTLE SURPRISE FOR YOU 💌</div>
+    <div class="heart">💗</div>
+    <h1>Happy Boyfriend Day<br>Stromie 🐱</h1>
+    <p id="subtitle">made with lots of pyaar, thodi si pagalpan & many many cats</p>
+    <button onclick="openSurprise()">Open your surprise 🎀</button>
+  </section>
+
+  <section id="surprise" class="hidden">
+    <div class="card">
+      <h2>Hii Stromie 🥺💗</h2>
+      <div class="message" id="mainMessage">Dear Stromie,
+
+Yaha apna Hinglish message likhna hai.
+Jo bhi dil mein hai, woh yaha likh sakti ho. 🥹💗
+
+Happy Boyfriend Day, Stromie!
+I hope ye chhoti si website tumhe smile karwa de. 🐱🎀</div>
+    </div>
+
+    <div class="card">
+      <h2>Our little memories 📸</h2>
+      <div class="photos">
+        <img src="photo1.jpg" alt="Memory 1">
+        <img src="photo2.jpg" alt="Memory 2">
+        <img src="photo3.jpg" alt="Memory 3">
+        <img src="photo4.jpg" alt="Memory 4">
+      </div>
+      <p class="note">Bas photo1.jpg, photo2.jpg... ki jagah apni photos rakh dena 💗</p>
+    </div>
+
+    <div class="card" style="text-align:center">
+      <h2>One last thing 🐱💌</h2>
+      <p class="message" id="endingMessage">You are very very important to me.
+Happy Boyfriend Day, Stromie. 💗
+Stay smiling, okay? 🥺🎀</p>
+      <div style="font-size:45px">🐱 💗 🐱 💗 🐱</div>
+    </div>
+  </section>
+
+  <div class="footer">made specially for Stromie ♡</div>
+</main>
+
+<script>
+function openSurprise(){
+  document.getElementById("surprise").classList.remove("hidden");
+  document.getElementById("surprise").scrollIntoView({behavior:"smooth"});
+}
+</script>
+</body>
+</html>
